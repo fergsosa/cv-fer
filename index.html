@@ -8,10 +8,21 @@
     />
     <title>Redirigiendo CV...</title>
     <style>
+      :root {
+        --bg-color: #e6e6e6;
+        --text-color: #333;
+      }
+
+      @media (prefers-color-scheme: dark) {
+        :root {
+          --bg-color: #333;
+          --text-color: #e6e6e6;
+        }
+      }
       body {
         display: flex;
-        background-color: #000;
-        color: #f4f4f5;
+        background-color: var(--bg-color);
+        color: var(--text-color);
         justify-content: center;
         align-items: center;
         height: 100vh;
